@@ -1,0 +1,4 @@
+A Flink application project using Java and Maven.
+
+To package your job for submission to Flink, use: 'mvn clean package'. Afterwards, you'll find the
+jar to use in the 'target/' folder: `crossing_the_streams-1.0-SNAPSHOT.jar`

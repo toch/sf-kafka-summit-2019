@@ -1,0 +1,15 @@
+{
+  "name": "jdbc-source",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+    "incrementing.column.name": "id",
+    "tasks.max": "1",
+    "mode": "incrementing",
+    "topic.prefix": "ghostbusters_",
+    "poll.interval.ms": "1000",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false",
+    "connection.url": "jdbc:postgresql://DATABASE_HOSTNAME:5432/ghostbusters?user=postgres&password=password",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter"    
+  }
+}
